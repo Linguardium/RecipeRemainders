@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "customrecipes",
+  "version": "${version}",
+  "name": "CustomRecipes",
+  "description": "adds custom recipe types to support custom recipe remainders",
+  "authors": [
+    "Linguardium"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/customrecipes/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.linguardium.customrecipes.CustomRecipes"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "customrecipes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  }
+}
