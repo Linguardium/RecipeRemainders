@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "mod.linguardium.customrecipes.mixin",
+  "package": "mod.linguardium.customrecipes.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": ["RecipeRemainderMixin"],
   "client": [],
