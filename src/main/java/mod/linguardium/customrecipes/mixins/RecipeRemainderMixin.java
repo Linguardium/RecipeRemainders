@@ -21,11 +21,9 @@ public abstract class RecipeRemainderMixin implements CraftingRecipe {
         for(int i = 0; i < defaultedList.size(); ++i) {
             Item item = inventory.getInvStack(i).getItem();
             if (item.hasRecipeRemainder()) {
-                if (item instanceof CustomRecipeRemainder) {
-                    defaultedList.set(i,((CustomRecipeRemainder) item).getRecipeRemainder(inventory.getInvStack(i)));
-                }else {
                     defaultedList.set(i, new ItemStack(item.getRecipeRemainder()));
-                }
+            }else if (item instanceof CustomRecipeRemainder) {
+                    defaultedList.set(i,((CustomRecipeRemainder) item).getRecipeRemainder(inventory.getInvStack(i)));
             }
         }
 
