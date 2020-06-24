@@ -1,29 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "customrecipes",
+  "id": "reciperemainders",
   "version": "${version}",
-  "name": "CustomRecipes",
-  "description": "adds custom recipe types to support custom recipe remainders",
+  "name": "Recipe Remainders",
+  "description": "adds custom recipe remainder itemstack support",
   "authors": [
     "Linguardium"
   ],
   "contributors": [],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/customrecipes/icon.png",
+  "icon": "assets/reciperemainders/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "mod.linguardium.customrecipes.CustomRecipes"
+      "mod.linguardium.reciperemainders.RecipeRemainders"
     ],
     "client": [],
     "server": []
   },
   "mixins": [
-    "customrecipes.mixins.json"
+    "reciperemainders.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.4.0",
-    "fabric": "*"
+    "fabricloader": ">=0.4.0"
   }
 }
